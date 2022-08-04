@@ -1,0 +1,100 @@
+:root {
+    --pink-color: #e26e70;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( 45deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 50%, rgb(255, 204, 112) 100% );
+}
+
+body > button {
+    font-size: 20px;
+    border-radius: 5px;
+    outline: none;
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.modal--container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(79, 75, 75, 0.463);
+    display: none;
+}
+
+.modal__inner {
+    width: 450px;
+    position: relative;
+    margin: 200px auto;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.5s;
+    animation: top-down linear 0.2s;
+}
+
+.modal--header {
+    background-color: var(--pink-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: #fff;
+}
+
+.modal--header .close {
+    cursor: pointer;
+}
+
+.modal--body {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.modal--body .title {
+    color: var(--pink-color);
+}
+
+.modal--footer {
+    padding: 15px;
+    background-color: #fff;
+    text-align: right;
+}
+
+.modal--footer button {
+    background-color: var(--pink-color);
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+@keyframes top-down {
+    from { margin-top: 0px;}
+    to { margin-top: 200px;}
+}
