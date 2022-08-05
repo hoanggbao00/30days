@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../fontawesome-5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Day 9 - Weather API</title>
+</head>
+<body class>
+    <div class="card">
+        <div class="search-box">
+            <input type="text" id="search">
+        </div>
+        <div class="city-country">
+            <span class="city"></span>,
+            <span class="country"></span>
+        </div>
+        <div class="date-time">
+            <span class="date"></span>,
+            <span class="time"></span>
+        </div>
+        <div class="temperature">
+            <span class="value">--</span>
+            <span>
+                <sup>o</sup>C
+            </span>
+        </div>
+        <div class="short-desc">Clouds</div>
+        <div class="more-desc">
+            <div class="visibility">
+                <i class="fal fa-eye"></i>
+                <span>0(m)</span>
+            </div>
+            <div class="wind">
+                <i class="fal fa-wind"></i>
+                <span>0(m/s)</span>
+            </div>
+            <div class="cloud">
+                <i class="fal fa-cloud"></i>
+                <span>0 (%)</span>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

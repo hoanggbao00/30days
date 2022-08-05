@@ -1,0 +1,101 @@
+:root {
+    --primary-color: #2691d9;
+    --error-color: #e74c3c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+}
+
+.form--container {
+    width: 400px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.form--container h1 {
+    text-align: center;
+}
+
+.form--control {
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+}
+
+.form--control input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    border-bottom: 2px solid #adadad;
+}
+
+span {
+    position: absolute;
+    width: 0;
+    border-bottom: 3px solid var(--primary-color);
+    transition: 0.3s;
+    left: 0;
+    top: 38px;
+}
+
+.form--control input:focus ~ span {
+    width: 100%;
+}
+
+.form--control.error small {
+    color: var(--error-color);
+}
+
+.form--control.error input {
+    border-bottom: 2px solid var(--error-color);
+}
+
+.btnRegister {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 18;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btnRegister:hover {
+    background-color: #08609a;
+}
+
+.form--action {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form--action a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.form--action a:hover {
+    text-decoration: underline;
+}
