@@ -58,7 +58,7 @@ function checkLength(input, min, max) {
     if(inputLength < min) {
         showError(input, `MK phai co it nhat ${min} ky tu`);
         isInvalid = false; 
-    } else {
+    } else if(inputLength > max){
         showError(input, `MK khong duoc qua ${max} ky tu`);
         isInvalid = false;
     }
