@@ -34,3 +34,9 @@
 [Day 14 - Slideshow carousel](https://hoanggbao00.github.io/30days/Day14/)
 
 [Day 15 - Product filter](https://hoanggbao00.github.io/30days/Day15/)
+
+[Day 16 - Animated on Scroll](https://hoanggbao00.github.io/30days/Day16/)
+
+[Day 17 - Counter](https://hoanggbao00.github.io/30days/Day17/)
+
+[Day 18 - Drag and drop](https://hoanggbao00.github.io/30days/Day18/)
