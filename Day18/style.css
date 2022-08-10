@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins';
+    background: linear-gradient(145deg, #a4508b, #5f0a87);;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+    background-color: #fff;
+    margin: 0 15px;
+}
+
+.target {
+    width: 100%;
+    height: 100%;
+    background-image: url('./asset/img1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.target.new {
+    background-image: url('./asset/img10.jpg')
+}
+
+.dragging {
+    border: 2px solid #ccc;
+}
