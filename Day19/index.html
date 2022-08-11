@@ -9,27 +9,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>Day 18 - Drag and Drop</title>
+    <title>Day 19 - Drawing app</title>
 </head>
 <body>
-    <div class="box">
-        <div class="target" draggable="true"></div>
+    <div class="container">
+        <div class="toolbox__container">
+            <div class="toolbox toolbox--left">
+                <div class="color">
+                    <input type="color">
+                </div>
+                <div class="eraser">
+                    <i class="fas fa-eraser"></i>
+                </div>
+                <div class="size--down"> - </div>
+                <div class="size">
+                    <p id="size">10</p>
+                </div>
+                <div class="size--up">+</div>
+            </div>
+            <div class="toolbox toolbox--right">
+                <div class="save">
+                    <i class="fas fa-save"></i>
+                </div>
+                <div class="clear">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <canvas id="main">
+
+        </canvas>
     </div>
-    <div class="box">
-        <div class="target new" draggable="true"></div>
-    </div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    
     <a style="
     position: fixed;top: 50%; left: 15px;transform: translateY(-50%);
     background-color: #fff;padding: 5px 10px;text-align: center;border-radius: 5px; box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);"
-    href="../Day17/">Prev day</a>
+    href="../Day18/">Prev day</a>
     <a style="
     position: fixed;top: 50%; right: 15px;transform: translateY(-50%);
     background-color: #fff;padding: 5px 10px;text-align: center;border-radius: 5px; box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);"
-    href="../Day19/">Next day</a>
+    href="../Day20/">Next day</a>
     <script src="./app.js"></script>
 </body>
 </html>

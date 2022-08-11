@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins';
+}
+
+.toolbox__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color: cornflowerblue;
+}
+
+.toolbox__container .toolbox {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 0 5px;
+}
+
+.toolbox__container .toolbox--right {
+    justify-content: flex-end;
+}
+
+.toolbox__container .toolbox div {
+    margin-right: 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.toolbox__container .toolbox--right div {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.toolbox div:hover {
+    color: blue;
+}
+
+.toolbox input[type="color"] {
+    width: 100%;
+    height: 100%;
+}
+
+.toolbox .size input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+#main {
+    border: 2px solid #000;
+    width: 100%;
+    height: 800px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+}
+
+.active {
+    color: blue;
+}

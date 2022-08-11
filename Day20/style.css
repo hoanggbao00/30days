@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins';
+    background-color: #000;
+}
+
+
+.text-typing p {
+    overflow: hidden;
+    color: #96ee1c;
+    font-size: 70px;
+    font-weight: 700;
+    white-space: nowrap;
+    animation: text-typing 10s steps(30) infinite , blink 1s infinite;
+    text-shadow: 0 0 100px #96ee1c;
+}
+
+@keyframes text-typing {
+    0%, 100% {
+        width: 0%;
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        border-right: 10px solid transparent;
+    }
+    50% {
+        border-right: 10px solid #96ee1c;
+    }
+}
