@@ -39,3 +39,7 @@
 [Day 17 - Counter](https://hoanggbao00.github.io/30days/Day17/)
 
 [Day 18 - Drag and drop](https://hoanggbao00.github.io/30days/Day18/)
+
+[Day 19 - Draw app](https://hoanggbao00.github.io/30days/Day19/)
+
+[Day 20 - Typing effect](https://hoanggbao00.github.io/30days/Day20/)
