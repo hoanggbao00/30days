@@ -9,24 +9,29 @@ const imgPreview = document.querySelector('.image--preview img'),
         if(current == 0){
             next.classList.remove('hide');
             prev.classList.add('hide');
-            console.log(current);
             return;
         }
 
         if(current == galleryImgs.length-1) {
             prev.classList.remove('hide');
             next.classList.add('hide');
-            console.log(current);
             return;
         }
+
+        next.classList.remove('hide');
+        prev.classList.remove('hide');
     }
 
     prev.addEventListener('click', function() {
-        updateBtn();
+        clearInterval(autoplay);
+        updateImage(--current);
+        foo();
     });
 
     next.addEventListener('click', function() {
-        updateBtn();
+        clearInterval(autoplay);
+        updateImage(++current);
+        foo();
     })
 
     function updateImage(index) {
@@ -36,21 +41,25 @@ const imgPreview = document.querySelector('.image--preview img'),
         current = index;
         imgPreview.src = galleryImgs[index].getAttribute('src');
         galleryImgs[index].classList.add('active');
+        updateBtn();
     }
 
     galleryImgs.forEach((img, index) => {
         img.addEventListener('click', e => {
             updateImage(index);
-            updateBtn();
         });
     });
 
-    setInterval(() => {
-        updateImage(current);
-        updateBtn();
-        if(current < galleryImgs.length-1) {
-            current++;
-        } else {
-            current = 0;
-        }
-    }, 1000);
+    let autoplay;
+    function foo() {
+        autoplay = setInterval(() => {
+            updateImage(current);
+            if(current < galleryImgs.length-1) {
+                current++;
+            } else {
+                current = 0;
+            }
+        }, 1000);
+    }
+
+    foo();
